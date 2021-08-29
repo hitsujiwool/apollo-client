@@ -522,11 +522,7 @@ export class InMemoryCache extends ApolloCache<NormalizedCacheObject> {
     options?: BroadcastOptions,
   ) {
     const { lastDiff } = c;
-    const diff = this.diff<any>({
-      query: c.query,
-      variables: c.variables,
-      optimistic: c.optimistic,
-    });
+    const diff = this.diff<any>(c);
 
     if (options) {
       if (c.optimistic &&
