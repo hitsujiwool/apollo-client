@@ -47,8 +47,6 @@ temp/
 # alm editor
 .alm
 
-yarn.lock
-
 # docs
 db.json
 docs.json
